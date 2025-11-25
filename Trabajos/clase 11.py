@@ -1,14 +1,13 @@
+#Ejercicio 3: Pide 6 nombres y muestra la lista numerada (1. Nombre1, 2. Nombre2, etc.)-}
+lista_nombres=[]
+for i in range(6):
+     nombre=input("Introduce un nombre: ") 
+     lista_nombres.append (nombre)
+     lista_nombres.sort()
 
-
-
-
-
-
-
-
-
-
-
+     for i, nombre in enumerate (lista_nombres, start=1):
+         print(f"{i}. {nombre}")
+         
 # Ejercicio 4: Pide 8 numeros, elimina las repeticiones y muestra la lista sin duplicados ordenados de menor a mayor
 lista_numeros = [] 
 
@@ -107,7 +106,7 @@ diccionario_paises = {
 }
 while pais_buscado != "salir":
     if pais_buscado in diccionario_paises:
-    print(f"La capital de {pais_buscado} es: {diccionario_paises[pais_buscado]}")
+      print(f"La capital de {pais_buscado} es: {diccionario_paises[pais_buscado]}")
 else:
     capital_pais = input("El país no se encuentra en el diccionario. Ingresa la capital de ese país para agregarlo: ")
     
